@@ -1,5 +1,3 @@
-const { arrayBuffer } = require("stream/consumers");
-
 function longest_common_substring (x,y,m,n){
     var LCStuff =  Array(m+1).fill().map(()=>Array(n+1).fill(0))
     var result = 0;
@@ -17,11 +15,12 @@ function longest_common_substring (x,y,m,n){
             }
         }
     }
-    return result;
+    // return result;
+    console.log(result);
 }
 
 const X = "Google"
-const Y = "Go"
+const Y = "Goo"
 const m = X.length
 const n = Y.length
 
